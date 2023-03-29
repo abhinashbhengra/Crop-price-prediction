@@ -5,7 +5,7 @@ Created on March 2023
 @author: Sriharinath,Jaswant
 """
 
-from flask import Flask, render_template
+from fladsk import Flask, render_template
 from flask_cors import CORS, cross_origin
 import numpy as np
 import pandas as pd

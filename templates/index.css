@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #edf1d6;
+}
+.mynavbar {
+  background-color: #609966;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.logo img {
+  height: 50px;
+}
+.mynavbar2 {
+  text-align: center;
+}
+.mynavbar2 img {
+  width: 50px;
+}
