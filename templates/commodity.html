@@ -128,35 +128,65 @@
   height:400px !important;">
     </canvas>
   <script>
-    new Chart(
-    document.getElementById("chartjs-0"),{"type":"line","data":{"labels":{{context.forecast_x|safe}},"datasets":[{"label":"Next year Price","data":{{context.forecast_y}},"fill":false,"borderColor":"rgb(75, 192, 192)","lineTension":0.1}]},"options":{ responsive: true,
-    maintainAspectRatio: false,
-    scales: {
-        yAxes: [{
-            display: true,
-            ticks: {
-                suggestedMin: 1000,
-                stepSize : 200
+    // new Chart(
+    // document.getElementById("chartjs-0"),{"type":"line","data":{"labels":{{context.forecast_x|safe}},"datasets":[{"label":"Next year Price","data":{{context.forecast_y}},"fill":false,"borderColor":"rgb(75, 192, 192)","lineTension":0.1}]},"options":{ responsive: true,
+    // maintainAspectRatio: false,
+    // scales: {
+    //     yAxes: [{
+    //         display: true,
+    //         ticks: {
+    //             suggestedMin: 1000,
+    //             stepSize : 200
+    //         }
+    //     }]
+    // }}});
+    new Char(document.getElementById('chartjs-1'),{'type':'line', 'data':{'label':{forecast_x}},'datasets':[{'label':'Previous year price','data':{forecast_y}, 'fill':false, 'borderColor': "rgb(75, 192, 192)", 'lineTension':0.1}], 'options':{
+      responsive:true,
+      scales:{
+        yAxes:[
+          {
+            display:true,
+            ticks:{
+              suggestedMin:1000,
+              stepSize : 200
             }
-        }]
-    }}});</script>
+          }
+        ]
+      }
+    }})
+    </script>
   </div>
   <div class="chartjs-wrapper col s7 offset-s1">
     <canvas id="chartjs-1" class="chartjs" width="undefined" height="undefined" style=" width:800px !important;
   height:400px !important;">
     </canvas>
   <script>
-    new Chart(document.getElementById("chartjs-1"),{"type":"line","data":{"labels":{{context.previous_x|safe}},"datasets":[{"label":"Previous year price","data":{{context.previous_y}},"fill":false,"borderColor":"rgb(75, 192, 192)","lineTension":0.1}]},"options":{ responsive: true,
-    maintainAspectRatio: false,
-    scales: {
-        yAxes: [{
-            display : true,
-            ticks: {
-                suggestedMin : 1000,
-                stepSize : 200
+    // new Chart(document.getElementById("chartjs-1"),{"type":"line","data":{"labels":{{context.previous_x|safe}},"datasets":[{"label":"Previous year price","data":{{context.previous_y}},"fill":false,"borderColor":"rgb(75, 192, 192)","lineTension":0.1}]},"options":{ responsive: true,
+    // maintainAspectRatio: false,
+    // scales: {
+    //     yAxes: [{
+    //         display : true,
+    //         ticks: {
+    //             suggestedMin : 1000,
+    //             stepSize : 200
+    //         }
+    //     }]
+    // }}});
+    new Char(document.getElementById('chartjs-1'),{'type':'line', 'data':{'label':{previous_x}},'datasets':[{'label':'Previous year price','data':{previous_y}, 'fill':false, 'borderColor': "rgb(75, 192, 192)", 'lineTension':0.1}], 'options':{
+      responsive:true,
+      scales:{
+        yAxes:[
+          {
+            display:true,
+            ticks:{
+              suggestedMin:1000,
+              stepSize : 200
             }
-        }]
-    }}});</script>
+          }
+        ]
+      }
+    }})
+    </script>
   </div>
   </div>
 
