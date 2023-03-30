@@ -12,15 +12,32 @@
             padding: 5px 50px 75px 50px;
         }
     </style>
+     <style>
+      div.main {
+        padding: 5px 50px 75px 50px;
+        /* background-color: aqua; */
+      }
+
+      span,
+      img {
+        vertical-align: middle;
+      }
+
+      .brand-logo > span,
+      .brand-logo > img {
+        vertical-align: middle;
+      }
+    </style>
         
 </head>
 <body >
   <div class="main teal">
     <div class="nav-wrapper">
-      <h3 class="card-panel green accent-1 center"><a class="brand-logo  #dF7857-text text-lighten-4" href="#"><img alt="" src="/static/logo1.png" height="60px" width="60px" class="responsive-img left" />
+      <h3 class="card-panel green accent-1 center"><a class="brand-logo  black-text text-lighten-4" href="#"><img alt="" src="/static/logo1.png" height="60px" width="60px" class="responsive-img" />
         <span>CROPS PRICE PREDICTION SYSTEM</span></a>
         </a></h3><h3>
     </div>
+
     <h2 class="header">{{context.name}}</h2>
     <div class="row green lighten-4">
         <div class="col s8 m7">
